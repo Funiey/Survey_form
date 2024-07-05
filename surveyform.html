@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the survey below:</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="dropdown">Select Option:</label>
+            
+            <select id="dropdown">
+                <option value="option1">Male</option>
+                <option value="option2">Female</option>
+                <option value="option3">Rather not say</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Do you find the program interesting?</label><br>
+            <input type="radio" id="radio1" name="choice" value="option1">
+            <label for="radio1">Yes</label><br>
+            <input type="radio" id="radio2" name="choice" value="option2">
+            <label for="radio2">No</label><br>
+        </div>
+<br>
+
+        <div class="form-group">
+            <label>Are you benefiting from the program?</label><br>
+            <input type="checkbox" id="checkbox1" name="option[]" value="option1">
+            <label for="checkbox1">Yes</label><br>
+            <input type="checkbox" id="checkbox2" name="option[]" value="option2">
+            <label for="checkbox2">No</label><br>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
